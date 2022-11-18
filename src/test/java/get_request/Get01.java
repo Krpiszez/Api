@@ -6,21 +6,21 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 
 /*
-1) Postman is used for manual API testing.
-2) We use Rest-Assured Library for Automation API testing.
-3) To type automation script follow the steps:
-    a) Understand the requirement
-    b) Type the test cases
-        To type cases we use 'Gherkin Language'
-        The keywords are    x) Given: It is used for preconditions
-                            y) When: It is used for actions
-                            z) Then: It is used for outputs
-                            t) And:  It is used for multiple given, when and then
-     c) Start to type Automation Script
-        i) Set the Url
-        ii) Set the expected data(Post, Put, Patch requests)
-        iii) Send the Request and get the Response
-        iv) Do Assertion
+    1) Postman is used for manual API testing.
+    2) We use Rest-Assured Library for Automation API testing.
+    3) To type automation script follow the steps:
+        a) Understand the requirement
+        b) Type the test cases
+            To type cases we use 'Gherkin Language'
+            The keywords are    x) Given: It is used for preconditions
+                                y) When: It is used for actions
+                                z) Then: It is used for outputs
+                                t) And:  It is used for multiple given, when and then
+         c) Start to type Automation Script
+            i) Set the Url
+            ii) Set the expected data(Post, Put, Patch requests)
+            iii) Send the Request and get the Response
+            iv) Do Assertion
 */
 public class Get01 {
         /*
