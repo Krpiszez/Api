@@ -1,6 +1,6 @@
 package get_request;
 
-import bas_urls.JsonPlaceHolderBaseUrl;
+import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;

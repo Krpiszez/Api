@@ -1,6 +1,6 @@
 package get_request;
 
-import bas_urls.HerOkuAppBaseUrl;
+import base_urls.HerOkuAppBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 
