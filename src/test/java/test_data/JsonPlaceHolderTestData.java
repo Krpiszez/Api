@@ -17,13 +17,13 @@ public class JsonPlaceHolderTestData {
 
 
     public Map<String, Object> expectedDataJPH(String firstname, String lastname, Integer totalprice,
-                                               Boolean depositpaid, Map<String,String> bookingdates, String additionalneeds) {
+                                               Boolean depositpaid, Map<String,String> bookingdatesMap, String additionalneeds) {
         Map<String, Object> expectedData = new HashMap<>();
         expectedData.put("firstname", firstname);
         expectedData.put("lastname", lastname);
         expectedData.put("totalprice", totalprice);
         expectedData.put("depositpaid", depositpaid);
-        expectedData.put("bookingdates", bookingdates);
+        expectedData.put("bookingdates", bookingdatesMap);
         expectedData.put("additionalneeds", additionalneeds);
 
         return expectedData;
