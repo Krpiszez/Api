@@ -12,6 +12,11 @@ import static org.testng.AssertJUnit.assertEquals;
 public class Post03Pojo extends JsonPlaceHolderBaseUrl {
     //To use Pojo class is the most common one it is secure and fast.
     //Until you learn it can be challenging.
+        /*
+    How do we handle different key-values in response?
+    We use @JsonIgnoreProperties(ignoreUnknown = true) annotation at the top of the pojo class.
+    It comes from "org.codehaus.jackson.annotate.JsonIgnoreProperties"
+     */
 
     /*
          Given

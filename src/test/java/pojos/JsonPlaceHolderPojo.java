@@ -2,6 +2,11 @@ package pojos;
 
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
+        /*
+        How do we handle different key-values in response?
+        We use @JsonIgnoreProperties(ignoreUnknown = true) annotation at the top of the pojo class.
+        It comes from "org.codehaus.jackson.annotate.JsonIgnoreProperties"
+         */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class JsonPlaceHolderPojo {
 
@@ -50,4 +55,5 @@ public class JsonPlaceHolderPojo {
                 ",\n completed=" + completed +
                 '}';
     }
+
 }
