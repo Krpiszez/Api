@@ -5,6 +5,24 @@ import java.util.Map;
 
 public class JsonPlaceHolderTestData {
 
+    protected Map<String, Object> map = new HashMap<>();
+
+    public JsonPlaceHolderTestData() {
+    }
+
+    @Override
+    public String toString() {
+        return "JsonPlaceHolderTestData{" +
+                "map=" + map +
+                '}';
+    }
+
+    public JsonPlaceHolderTestData(Integer userId, String title, Boolean completed) {
+        map.put("userId", userId);
+        map.put("title", title);
+        map.put("completed", completed);
+    }
+
     public Map<String, Object> expectedDataJPH(Integer userId, String title, Boolean completed){
 
         Map<String, Object> expectedData = new HashMap<>();
