@@ -1,4 +1,4 @@
-package put_request;
+package put_requests;
 
 import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.http.ContentType;
@@ -32,7 +32,7 @@ public class Put01 extends JsonPlaceHolderBaseUrl {
 									   }
      */
     @Test
-    public void put01(){
+    public void put01() {
         //Set the url
         spec.pathParams("first", "todos", "second", 198);
 
@@ -42,7 +42,7 @@ public class Put01 extends JsonPlaceHolderBaseUrl {
         System.out.println("expectedData = " + expectedData);
 
         //Send the request and get the response
-        Response response = given().spec(spec).contentType(ContentType.JSON). body(expectedData).when().put("/{first}/{second}");
+        Response response = given().spec(spec).contentType(ContentType.JSON).body(expectedData).when().put("/{first}/{second}");
         response.prettyPrint();
 
         //Do assertion
@@ -53,8 +53,5 @@ public class Put01 extends JsonPlaceHolderBaseUrl {
         assertEquals(expectedData.get("completed"), actualData.get("completed"));
         assertEquals(expectedData.get("title"), actualData.get("title"));
         assertEquals(expectedData.get("userId"), actualData.get("userId"));
-
-
-
     }
 }
