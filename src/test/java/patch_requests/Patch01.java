@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class Patch01 extends JsonPlaceHolderBaseUrl {
@@ -55,6 +56,12 @@ public class Patch01 extends JsonPlaceHolderBaseUrl {
         assertEquals(10, actualData.get("userId"));
         assertEquals(true, actualData.get("completed"));
         assertEquals(expectedData.get("title"), actualData.get("title"));
+
+        //OR we can do like the way below
+
+        response.then().assertThat().statusCode(200).body("userId", equalTo(10),
+                "title", equalTo("Do Your Homework"),
+                "completed", equalTo(true));
 
 
     }
