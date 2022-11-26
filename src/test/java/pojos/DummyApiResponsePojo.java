@@ -3,15 +3,15 @@ package pojos;
 public class DummyApiResponsePojo {
 
     private String status;
-    private DummyApiDataPojo dummyApiData;
+    private DummyApiDataPojo data;
     private String message;
 
     public DummyApiResponsePojo() {
     }
 
-    public DummyApiResponsePojo(String status, DummyApiDataPojo dummyApiData, String message) {
+    public DummyApiResponsePojo(String status, DummyApiDataPojo data, String message) {
         this.status = status;
-        this.dummyApiData = dummyApiData;
+        this.data = data;
         this.message = message;
     }
 
@@ -23,12 +23,12 @@ public class DummyApiResponsePojo {
         this.status = status;
     }
 
-    public DummyApiDataPojo getDummyApiData() {
-        return dummyApiData;
+    public DummyApiDataPojo getData() {
+        return data;
     }
 
-    public void setDummyApiData(DummyApiDataPojo dummyApiData) {
-        this.dummyApiData = dummyApiData;
+    public void setData(DummyApiDataPojo data) {
+        this.data = data;
     }
 
     public String getMessage() {
@@ -43,7 +43,7 @@ public class DummyApiResponsePojo {
     public String toString() {
         return "DummyApiResponsePojo{" +
                 "status='" + status + '\'' +
-                ", dummyApiData=" + dummyApiData +
+                ", Data=" + data +
                 ", message='" + message + '\'' +
                 '}';
     }
