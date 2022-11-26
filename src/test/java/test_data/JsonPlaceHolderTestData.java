@@ -38,6 +38,14 @@ public class JsonPlaceHolderTestData {
 
         return expectedData;
     }
+    public String expectedDataInString(Integer userId, String title, Boolean completed){
+        String expectedData = "{\n" +
+                "    \"userId\": "+userId+",\n" +
+                "    \"title\": \""+title+"\",\n" +
+                "    \"completed\": "+completed+"\n" +
+                "  }";
+        return expectedData;
+    }
 
 
     public Map<String, Object> expectedDataJPH(String firstname, String lastname, Integer totalprice,

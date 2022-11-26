@@ -7,6 +7,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Test;
 import pojos.DummyApiDataPojo;
 import pojos.DummyApiResponsePojo;
+import utils.JsonUtils;
 
 import java.io.IOException;
 
