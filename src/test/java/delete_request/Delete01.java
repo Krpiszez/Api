@@ -9,8 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.*;
 import static org.testng.AssertJUnit.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -44,7 +43,7 @@ public class Delete01 extends JsonPlaceHolderBaseUrl {
         assertEquals(0, actualData.size());
         assertEquals(expectedData.size(), actualData.size());
         assertTrue(actualData.isEmpty());
-        response.then().assertThat().body("isEmpty()", Matchers.is(true));
+        response.then().assertThat().body("isEmpty()", is(true));
 
         /*How to automate Delete request in Api testing?
         i) Create a new data by using "Post Request"
