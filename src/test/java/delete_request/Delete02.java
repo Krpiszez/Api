@@ -4,6 +4,7 @@ import base_urls.HerOkuAppBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
+import utils.AuthenticationHerOkuApp;
 
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
@@ -22,7 +23,7 @@ public class Delete02 extends HerOkuAppBaseUrl {
     @Test
     public void delete02(){
         //Set the url
-        spec.pathParams("first", "booking", "second", 3349);
+        spec.pathParams("first", "booking", "second", 1149);
 
         //Set the expected data
         String expectedData = "Created";
@@ -30,7 +31,7 @@ public class Delete02 extends HerOkuAppBaseUrl {
         //Send the request and get the response
         Response response = given()
                 .spec(spec)
-                .headers("Cookie", "token=0f399cd5abdda29"
+                .headers("Cookie", "token="+ AuthenticationHerOkuApp.generateToken()
                         ,"Content-Type", "application/json").when().delete("/{first}/{second}");
         response.prettyPrint();
 

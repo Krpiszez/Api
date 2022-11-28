@@ -60,7 +60,7 @@ public class Get12Pojo extends HerOkuAppBaseUrl {
         //2.Way
         assertEquals(bookingDatesObject.getCheckin(), actualData.getBookingdates().getCheckin());
         assertEquals(bookingDatesObject.getCheckout(), actualData.getBookingdates().getCheckout());
-        assertEquals(expectedData.getAdditionalNeeds(), actualData.getAdditionalNeeds());
+        assertEquals(expectedData.getAdditionalneeds(), actualData.getAdditionalneeds());
 
     }
 }

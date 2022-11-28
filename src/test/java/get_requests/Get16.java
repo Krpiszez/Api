@@ -55,7 +55,7 @@ public class Get16 extends HerOkuAppBaseUrl {
         assertEquals(expectedData.getDepositpaid(), actualData.getDepositpaid());
         assertEquals(expectedData.getBookingdates().getCheckin(), actualData.getBookingdates().getCheckin());
         assertEquals(expectedData.getBookingdates().getCheckout(), actualData.getBookingdates().getCheckout());
-        assertEquals(expectedData.getAdditionalNeeds(), actualData.getAdditionalNeeds());
+        assertEquals(expectedData.getAdditionalneeds(), actualData.getAdditionalneeds());
 
 
 
