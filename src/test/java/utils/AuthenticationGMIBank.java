@@ -15,7 +15,7 @@ public class AuthenticationGMIBank {
         Map<String, Object> map = new HashMap<>();
         map.put("password", "John.123");
         map.put("rememberMe", true);
-        map.put("usename", "john_doe");
+        map.put("username", "john_doe");
         Response response = given().contentType(ContentType.JSON).body(map).when().post("https://www.gmibank.com/api/authenticate");
 
         return response.jsonPath().getString("id_token");
